@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f6fbfa"/><stop offset="1" stop-color="#d9efec"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <path d="M380 105c-72 84-72 198 0 270M420 105c72 84 72 198 0 270" fill="none" stroke="#4f9692" stroke-width="18" stroke-linecap="round"/>
+  <path d="M300 230h200" stroke="#c4a76c" stroke-width="14" stroke-linecap="round"/>
+  <text x="400" y="398" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#203335">Tratamientos corporales</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff8ed"/><stop offset="1" stop-color="#d9efec"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <circle cx="400" cy="185" r="116" fill="#fff" opacity=".65"/>
+  <path d="M330 175c26-24 54-24 80 0M390 215c18 16 38 16 56 0M470 175c25-24 53-24 78 0" fill="none" stroke="#4f9692" stroke-width="13" stroke-linecap="round"/>
+  <path d="M322 126h156M344 98h112" stroke="#c4a76c" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+  <text x="400" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#203335">Toxina botulinica</text>
+</svg>

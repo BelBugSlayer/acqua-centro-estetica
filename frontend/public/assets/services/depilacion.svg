@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d9efec"/><stop offset="1" stop-color="#fff8ed"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <path d="M300 270c64-92 136-92 200 0" fill="none" stroke="#4f9692" stroke-width="22" stroke-linecap="round"/>
+  <path d="M400 118v74M360 155h80M342 198l116-86M458 198l-116-86" stroke="#c4a76c" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="400" cy="190" r="95" fill="#fff" opacity=".35"/>
+  <text x="400" y="372" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#203335">Depilacion definitiva</text>
+</svg>

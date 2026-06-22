@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f6fbfa"/><stop offset="1" stop-color="#e7c7bd"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <path d="M230 245c90-58 250-58 340 0" fill="none" stroke="#4f9692" stroke-width="24" stroke-linecap="round"/>
+  <path d="M300 196c44-34 156-34 200 0" fill="none" stroke="#c4a76c" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="250" cy="183" r="42" fill="#fff" opacity=".65"/>
+  <text x="400" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#203335">Masajes</text>
+</svg>

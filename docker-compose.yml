@@ -1,0 +1,34 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: acqua-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - acqua_mongo_data:/data/db
+
+  backend:
+    build:
+      context: ./backend
+    container_name: acqua-backend
+    command: sh -c "npm run seed && npm start"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/acqua_estetica
+      PORT: 5000
+      CLIENT_URL: http://localhost:5173
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: acqua-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  acqua_mongo_data:
