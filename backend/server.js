@@ -14,7 +14,15 @@ const app = express();
 
 connectDB();
 
-app.use(cors({ origin: process.env.CLIENT_URL || '*' }));
+app.use(cors({ 
+  origin: (origin, callback) => {
+    if (!origin || origin.includes('belbuglayer.github.io') || origin.includes('localhost')) {
+      callback(null, true);
+    } else {
+      callback(new Error('CORS not allowed'));
+    }
+  }
+}));
 app.use(express.json());
 app.use(morgan('dev'));
 
