@@ -30,7 +30,7 @@ const fallbackServices = [
     category: 'inyectables',
     price: 85000,
     durationMinutes: 45,
-    imageUrl: '/assets/services/relleno-labios.jpeg'
+    imageUrl: 'assets/services/relleno-labios.jpeg'
   },
   {
     _id: '2',
@@ -39,7 +39,7 @@ const fallbackServices = [
     category: 'inyectables',
     price: 110000,
     durationMinutes: 50,
-    imageUrl: '/assets/services/rinomodelacion.jpeg'
+    imageUrl: 'assets/services/rinomodelacion.jpeg'
   },
   {
     _id: '3',
@@ -48,7 +48,7 @@ const fallbackServices = [
     category: 'inyectables',
     price: 95000,
     durationMinutes: 40,
-    imageUrl: '/assets/services/toxina-botulinica.jpeg'
+    imageUrl: 'assets/services/toxina-botulinica.jpeg'
   },
   {
     _id: '4',
@@ -57,7 +57,7 @@ const fallbackServices = [
     category: 'facial',
     price: 65000,
     durationMinutes: 60,
-    imageUrl: '/assets/services/plasma-facial.png'
+    imageUrl: 'assets/services/plasma-facial.png'
   },
   {
     _id: '5',
@@ -66,7 +66,7 @@ const fallbackServices = [
     category: 'corporal',
     price: 78000,
     durationMinutes: 70,
-    imageUrl: '/assets/services/criolipolisis.png'
+    imageUrl: 'assets/services/criolipolisis.png'
   }
 ];
 
@@ -78,7 +78,7 @@ const fallbackProducts = [
     category: 'cremas',
     price: 18500,
     stock: 18,
-    imageUrl: '/assets/products/crema-nutritiva.jpeg'
+    imageUrl: 'assets/products/crema-nutritiva.jpeg'
   },
   {
     _id: 'p2',
@@ -87,7 +87,7 @@ const fallbackProducts = [
     category: 'skincare',
     price: 24000,
     stock: 12,
-    imageUrl: '/assets/products/crema-dline.jpeg'
+    imageUrl: 'assets/products/crema-dline.jpeg'
   },
   {
     _id: 'p3',
@@ -96,7 +96,7 @@ const fallbackProducts = [
     category: 'suplementos',
     price: 29500,
     stock: 20,
-    imageUrl: '/assets/products/colageno.jpeg'
+    imageUrl: 'assets/products/colageno.jpeg'
   }
 ];
 
@@ -215,7 +215,7 @@ function App() {
     <main>
       <header className="topbar">
         <button className="brand-button" type="button" onClick={() => setView('inicio')}>
-          <img src="/assets/acqua-logo.jpeg" alt="Acqua Centro de Estetica" />
+          <img src="assets/acqua-logo.jpeg" alt="Acqua Centro de Estetica" />
           <span>Acqua</span>
         </button>
         <nav>
@@ -231,7 +231,7 @@ function App() {
       {view === 'inicio' && (
         <section className="hero">
           <div className="hero-copy">
-            <img className="hero-logo" src="/assets/acqua-logo.jpeg" alt="Acqua Centro de Estetica" />
+            <img className="hero-logo" src="assets/acqua-logo.jpeg" alt="Acqua Centro de Estetica" />
             <p className="eyebrow">Medicina estetica y bienestar</p>
             <h1>Acqua Centro de Estetica</h1>
             <p>
@@ -248,7 +248,7 @@ function App() {
             </div>
           </div>
           <div className="doctor-card">
-            <img src="/assets/dr-leo.jpeg" alt="Dr. Leo Grabauska" />
+            <img src="assets/dr-leo.jpeg" alt="Dr. Leo Grabauska" />
             <div>
               <p className="eyebrow">Medico encargado</p>
               <h2>Dr. Leo Grabauska</h2>
@@ -271,7 +271,7 @@ function App() {
           <div className="card-grid">
             {services.map((service) => (
               <article className="catalog-card" key={service._id}>
-                <img src={service.imageUrl || '/assets/services/default-service.svg'} alt={service.name} />
+                <img src={service.imageUrl || 'assets/services/default-service.svg'} alt={service.name} />
                 <div>
                   <span className="tag">{service.category}</span>
                   <h3>{service.name}</h3>
@@ -303,7 +303,7 @@ function App() {
           <div className="card-grid">
             {products.map((product) => (
               <article className="catalog-card" key={product._id}>
-                <img src={product.imageUrl || '/assets/services/default-service.svg'} alt={product.name} />
+                <img src={product.imageUrl || 'assets/services/default-service.svg'} alt={product.name} />
                 <div>
                   <span className="tag">{product.category}</span>
                   <h3>{product.name}</h3>
