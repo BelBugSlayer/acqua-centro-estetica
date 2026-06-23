@@ -1,3 +1,9 @@
+const mongoose = require('mongoose');
+  
+   // Limpiar colecciones antes de hacer seed
+  await mongoose.connection.collections['services'].deleteMany({});
+  await mongoose.connection.collections['products'].deleteMany({});
+
 require('dotenv').config();
 
 const mongoose = require('mongoose');
