@@ -46,7 +46,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'inyectables',
         price: 85000,
         durationMinutes: 45,
-        imageUrl: '/assets/services/relleno-labios.jpeg',
+        imageUrl: 'assets/services/relleno-labios.jpeg',
         featured: true
       },
       {
@@ -56,7 +56,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'inyectables',
         price: 110000,
         durationMinutes: 50,
-        imageUrl: '/assets/services/rinomodelacion.jpeg',
+        imageUrl: 'assets/services/rinomodelacion.jpeg',
         featured: true
       },
       {
@@ -66,7 +66,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'inyectables',
         price: 95000,
         durationMinutes: 40,
-        imageUrl: '/assets/services/toxina-botulinica.jpeg',
+        imageUrl: 'assets/services/toxina-botulinica.jpeg',
         featured: true
       },
       {
@@ -76,7 +76,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'facial',
         price: 65000,
         durationMinutes: 60,
-        imageUrl: '/assets/services/plasma-facial.png'
+        imageUrl: 'assets/services/plasma-facial.png'
       },
       {
         code: 'SER-HIDROXI',
@@ -85,7 +85,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'facial',
         price: 130000,
         durationMinutes: 60,
-        imageUrl: '/assets/services/bioestimulador.png'
+        imageUrl: 'assets/services/bioestimulador.png'
       },
       {
         code: 'SER-CORP',
@@ -94,7 +94,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'corporal',
         price: 42000,
         durationMinutes: 50,
-        imageUrl: '/assets/services/tratamiento-corporal.png'
+        imageUrl: 'assets/services/tratamiento-corporal.png'
       },
       {
         code: 'SER-CRIO',
@@ -103,7 +103,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'corporal',
         price: 78000,
         durationMinutes: 70,
-        imageUrl: '/assets/services/criolipolisis.png'
+        imageUrl: 'assets/services/criolipolisis.png'
       },
       {
         code: 'SER-LIMPIEZA',
@@ -112,7 +112,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'facial',
         price: 38000,
         durationMinutes: 60,
-        imageUrl: '/assets/services/limpieza-facial.jpeg'
+        imageUrl: 'assets/services/limpieza-facial.jpeg'
       },
       {
         code: 'SER-MASAJES',
@@ -121,7 +121,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'bienestar',
         price: 30000,
         durationMinutes: 50,
-        imageUrl: '/assets/services/masajes.jpeg'
+        imageUrl: 'assets/services/masajes.jpeg'
       },
       {
         code: 'SER-UNAS',
@@ -130,7 +130,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'unas',
         price: 22000,
         durationMinutes: 75,
-        imageUrl: '/assets/services/unas.png'
+        imageUrl: 'assets/services/unas.png'
       },
       {
         code: 'SER-DEPI',
@@ -139,7 +139,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'depilacion',
         price: 25000,
         durationMinutes: 35,
-        imageUrl: '/assets/services/depilacion.jpeg'
+        imageUrl: 'assets/services/depilacion.jpeg'
       }
     ];
 
@@ -151,7 +151,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'cremas',
         price: 18500,
         stock: 18,
-        imageUrl: '/assets/products/crema-nutritiva.jpeg'
+        imageUrl: 'assets/products/crema-nutritiva.jpeg'
       },
       {
         code: 'PRO-CREMA-ANTIAGE',
@@ -160,7 +160,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'skincare',
         price: 24000,
         stock: 12,
-        imageUrl: '/assets/products/crema-dline.jpeg'
+        imageUrl: 'assets/products/crema-dline.jpeg'
       },
       {
         code: 'PRO-COLAGENO',
@@ -169,7 +169,7 @@ app.get('/api/seed', async (req, res) => {
         category: 'suplementos',
         price: 29500,
         stock: 20,
-        imageUrl: '/assets/products/colageno.jpeg'
+        imageUrl: 'assets/products/colageno.jpeg'
       }
     ];
 
