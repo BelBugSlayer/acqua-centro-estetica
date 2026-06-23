@@ -1,9 +1,3 @@
-const mongoose = require('mongoose');
-  
-   // Limpiar colecciones antes de hacer seed
-  await mongoose.connection.collections['services'].deleteMany({});
-  await mongoose.connection.collections['products'].deleteMany({});
-
 require('dotenv').config();
 
 const mongoose = require('mongoose');
@@ -150,6 +144,7 @@ const products = [
 async function seed() {
   await mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/acqua_estetica');
 
+  // Limpiar colecciones
   await Promise.all([
     Service.deleteMany({}),
     Product.deleteMany({}),
@@ -157,15 +152,16 @@ async function seed() {
     Order.deleteMany({})
   ]);
 
+  // Cargar datos
   await Service.insertMany(services);
   await Product.insertMany(products);
 
-  console.log('Datos iniciales cargados');
+  console.log('✅ Datos iniciales cargados correctamente');
   await mongoose.disconnect();
 }
 
 seed().catch(async (error) => {
-  console.error(error);
+  console.error('❌ Error:', error);
   await mongoose.disconnect();
   process.exit(1);
 });

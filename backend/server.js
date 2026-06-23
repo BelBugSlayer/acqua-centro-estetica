@@ -23,7 +23,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // Endpoint para hacer seed
-app.post('/api/seed', async (req, res) => {
+app.get('/api/seed', async (req, res) => {
   try {
     const Service = require('./models/Service');
     const Product = require('./models/Product');
