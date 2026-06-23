@@ -271,7 +271,7 @@ function App() {
           <div className="card-grid">
             {services.map((service) => (
               <article className="catalog-card" key={service._id}>
-                <img src={service.imageUrl || 'assets/services/default-service.svg'} alt={service.name} />
+                <img src={`${import.meta.env.BASE_URL}${service.imageUrl || 'assets/services/default-service.svg'}`} alt={service.name} />
                 <div>
                   <span className="tag">{service.category}</span>
                   <h3>{service.name}</h3>
@@ -303,7 +303,7 @@ function App() {
           <div className="card-grid">
             {products.map((product) => (
               <article className="catalog-card" key={product._id}>
-                <img src={product.imageUrl || 'assets/services/default-service.svg'} alt={product.name} />
+                <img src={`${import.meta.env.BASE_URL}${product.imageUrl || 'assets/services/default-service.svg'}`} alt={product.name} />
                 <div>
                   <span className="tag">{product.category}</span>
                   <h3>{product.name}</h3>
